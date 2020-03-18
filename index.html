@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <header class="nav-container">
+        <ul class="top-nav" id="myTopnav">
+            <li><a href="">Works</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contacts</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div class="main-container-left">
+            <h1 class="website-title">Recipes</h1>
+            <p class="website-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
+                Donec viverra eleifend lacus, vitae ullamcor.</p>
+        </div>
+        <div class="main-container-right">
+            <img class="soup" src="img/soup.png" alt="soup">
+        </div>
+    </main>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "top-nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "top-nav";
+          }
+        }
+        </script>
+    
+</body>
+</html>
