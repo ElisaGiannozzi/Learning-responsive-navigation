@@ -39,6 +39,8 @@ body {
   flex-wrap: wrap;
   min-height: 60vh;
   max-width: 95%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .website-title {
