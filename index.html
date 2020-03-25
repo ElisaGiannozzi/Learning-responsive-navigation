@@ -9,15 +9,15 @@
     <title>Recipes</title>
 </head>
 <body>
-    <header class="nav-container">
-        <ul class="top-nav" id="myTopnav">
-            <li><a href="">Works</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contacts</a></li>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Works</a>
+            <a href="#news">Services</a>
+            <a href="#contact">Contacts</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-              </a>
-        </ul>
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <main class="main-container">
         <div class="main-container-left">
@@ -31,15 +31,15 @@
     </main>
 
     <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "top-nav") {
-            x.className += " responsive";
-          } else {
-            x.className = "top-nav";
-          }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
         }
-        </script>
+    }
+    </script>
     
 </body>
 </html>
